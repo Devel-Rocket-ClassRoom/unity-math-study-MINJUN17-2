@@ -718,7 +718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assignment_EnemyDetector
   detectionFOV: 120
   detectionRange: 10
-  uiInfoText: {fileID: 0}
+  uiInfoText: {fileID: 1738976620}
   detectedCount: 0
 --- !u!114 &1278333274
 MonoBehaviour:
@@ -733,7 +733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assignment_DirectionAlert
   alertRange: 15
-  uiInfoText: {fileID: 0}
+  uiInfoText: {fileID: 1738976620}
   nearbyEnemies: []
 --- !u!1001 &1436931446
 PrefabInstance:

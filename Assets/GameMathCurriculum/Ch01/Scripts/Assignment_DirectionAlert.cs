@@ -78,6 +78,7 @@ public class Assignment_DirectionAlert : MonoBehaviour
     {
 
         Vector3 toEnemy = enemy.position - transform.position;
+        toEnemy.y = 0f;
         if (toEnemy == Vector3.zero) return Direction.None;
         toEnemy = toEnemy.normalized;
 
