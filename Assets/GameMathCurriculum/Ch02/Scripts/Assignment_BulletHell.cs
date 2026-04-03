@@ -86,7 +86,8 @@ public class Assignment_BulletHell : MonoBehaviour
 
     private Vector3 CalculateCircleDirection(int index, int total)
     {
-        // TODO
+        
+
         return Vector3.forward;
     }
 
