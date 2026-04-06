@@ -50,7 +50,7 @@ public class Assignment_RotationTrail : MonoBehaviour
         }
         Matrix4x4 rotMatrix = Matrix4x4.TRS(
         transform.position,                  
-        Quaternion.Euler(0f, rotationAngle, 0f),
+        Quaternion.Euler(0f, 0f, rotationAngle),
         Vector3.one
         );
 
@@ -59,7 +59,7 @@ public class Assignment_RotationTrail : MonoBehaviour
 
         trailPositions.Add(lastTipPos);
 
-        if (trailPositions.Count > trailLength)
+        while (trailPositions.Count > trailLength)
         {
             trailPositions.RemoveAt(0);
         }
