@@ -46,7 +46,7 @@ public class Assignment_RotationTrail : MonoBehaviour
     {
         if (autoRotate)
         {
-            rotationAngle = rotationSpeed * Time.time;
+            rotationAngle = rotationSpeed * Time.time % 360f;
         }
         Matrix4x4 rotMatrix = Matrix4x4.TRS(
         transform.position,                  
