@@ -98,8 +98,7 @@ public class Assignment_BulletHell : MonoBehaviour
 
     private Vector3 CalculateFanDirection(int index, int total)
     {
-        float halfAngle = fanAngle * 0.5f * Mathf.Deg2Rad;
-        float angle = Mathf.Lerp(-halfAngle, halfAngle, (float)index / (total - 1));
+        float angle = ((fanAngle / (total - 1)) * index - fanAngle * 0.5f) * Mathf.Deg2Rad;
         return new Vector3(Mathf.Sin(angle), 0f, Mathf.Cos(angle));
     }
     
