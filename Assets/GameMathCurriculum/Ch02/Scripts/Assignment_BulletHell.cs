@@ -86,21 +86,21 @@ public class Assignment_BulletHell : MonoBehaviour
 
     private Vector3 CalculateCircleDirection(int index, int total)
     {
-        
-
-        return Vector3.forward;
+        float angle = (360f / total) * index * Mathf.Deg2Rad;
+        return new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle));
     }
 
     private Vector3 CalculateSpiralDirection(int index, int total)
     {
-        // TODO
-        return Vector3.forward;
+        float angle = (360f / total) * index * Mathf.Deg2Rad + Time.time * spiralTurnSpeed;
+        return new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle));
     }
 
     private Vector3 CalculateFanDirection(int index, int total)
     {
-        // TODO
-        return Vector3.forward;
+        float halfAngle = fanAngle * 0.5f * Mathf.Deg2Rad;
+        float angle = Mathf.Lerp(-halfAngle, halfAngle, (float)index / (total - 1));
+        return new Vector3(Mathf.Sin(angle), 0f, Mathf.Cos(angle));
     }
     
     private void UpdateDebugUI()
