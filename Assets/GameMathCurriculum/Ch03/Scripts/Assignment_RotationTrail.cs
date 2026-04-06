@@ -49,9 +49,9 @@ public class Assignment_RotationTrail : MonoBehaviour
             rotationAngle = rotationSpeed * Time.time % 360f;
         }
         Matrix4x4 rotMatrix = Matrix4x4.TRS(
-        transform.position,                  
-        Quaternion.Euler(0f, 0f, rotationAngle),
-        Vector3.one
+            transform.position,                  
+            Quaternion.Euler(0f, 0f, rotationAngle),
+            Vector3.one
         );
 
         Vector3 localTip = new Vector3(armLength, 0f, 0f); 
