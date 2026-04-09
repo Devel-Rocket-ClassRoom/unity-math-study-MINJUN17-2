@@ -29,7 +29,6 @@ public class DragManager : MonoBehaviour
             Vector3 newPos = Vector3.Lerp(target.transform.position, startPos, returnSpeed * Time.deltaTime);
             newPos.y = terrain.SampleHeight(newPos);
             target.transform.position = newPos;
-            Debug.Log(Vector3.Distance(target.transform.position, startPos));
             if(Vector3.Distance(target.transform.position, startPos) < 0.1f)
             {
                 isReturn = false;
