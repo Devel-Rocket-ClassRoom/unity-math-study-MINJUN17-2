@@ -2319,7 +2319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BezierRandomMover
   startPoint: {fileID: 2001124465}
   endPoint: {fileID: 619626418}
-  spawnCount: 30
+  spawnCount: 5
   randomRange: 5
   minDuration: 1
   maxDuration: 4
