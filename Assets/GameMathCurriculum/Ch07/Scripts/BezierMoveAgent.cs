@@ -31,9 +31,6 @@ public class BezierMoveAgent : MonoBehaviour
 
     private Vector3 CubicBezier(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
     {
-        float u = 1f - t;
-        float u2 = u * u;
-        float t2 = t * t;
-        return u2 * u * p0 + 3f * u2 * t * p1 + 3f * u * t2 * p2 + t2 * t * p3;
+        return (1 - t) * (1 - t) * (1 - t) * p0 + 3f * (1 - t) * (1 - t) * t * p1 + 3f * (1 - t) * t * t * p2 + t * t * t * p3;
     }
 }
