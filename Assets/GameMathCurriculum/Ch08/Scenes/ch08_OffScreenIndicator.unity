@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521e9151763a7274fa06004c98b904aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 8
+  speed: 10
   rotationSpeed: 50
 --- !u!136 &81503905
 CapsuleCollider:
@@ -1457,7 +1457,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1395316299}
-  - component: {fileID: 1395316298}
   - component: {fileID: 1395316297}
   m_Layer: 0
   m_Name: GameObject
@@ -1491,21 +1490,7 @@ MonoBehaviour:
   - {fileID: 710591000}
   - {fileID: 281651260}
   padding: 15
---- !u!114 &1395316298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395316296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a39f17ae5954fb4b8c0202ce3e273b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OffscreenIndicator
-  targets: []
-  indicators: []
-  padding: 15
+  cam: {fileID: 1795070953}
 --- !u!4 &1395316299
 Transform:
   m_ObjectHideFlags: 0
